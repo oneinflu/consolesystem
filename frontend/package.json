@@ -1,0 +1,52 @@
+{
+  "name": "premium-blog-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tinymce/tinymce-react": "^6.3.0",
+    "@tiptap/extension-code-block-lowlight": "latest",
+    "@tiptap/extension-heading": "latest",
+    "@tiptap/extension-image": "latest",
+    "@tiptap/extension-link": "latest",
+    "@tiptap/extension-placeholder": "latest",
+    "@tiptap/extension-table": "latest",
+    "@tiptap/extension-table-cell": "latest",
+    "@tiptap/extension-table-header": "latest",
+    "@tiptap/extension-table-row": "latest",
+    "@tiptap/extension-youtube": "latest",
+    "@tiptap/html": "latest",
+    "@tiptap/react": "latest",
+    "@tiptap/starter-kit": "latest",
+    "@tiptap/suggestion": "latest",
+    "cheerio": "latest",
+    "class-variance-authority": "latest",
+    "daisyui": "latest",
+    "framer-motion": "latest",
+    "lowlight": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tinymce": "^8.3.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@tailwindcss/typography": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

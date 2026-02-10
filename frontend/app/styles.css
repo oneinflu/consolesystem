@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --radius: 1rem;
+}
+
+body {
+  @apply bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100;
+}
+
+.card {
+  @apply rounded-xl shadow-xl bg-white dark:bg-neutral-900;
+}
+ 
+.prose {
+  @apply max-w-none;
+}
+/* Preview typography basics */
+.prose h1 { font-size: 2rem; line-height: 2.5rem; font-weight: 700; margin: 1rem 0; }
+.prose h2 { font-size: 1.5rem; line-height: 2rem; font-weight: 600; margin: 0.75rem 0; }
+.prose h3 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; margin: 0.5rem 0; }
+.prose p { margin: 0.75rem 0; }
+.prose ul, .prose ol { padding-left: 1.25rem; margin: 0.75rem 0; }
+.prose ul { list-style-type: disc; }
+.prose ol { list-style-type: decimal; }
+.prose li { margin: 0.25rem 0; }
+.prose blockquote { border-left: 4px solid #e5e7eb; padding-left: 1rem; color: #6b7280; margin: 1rem 0; }
+.dark .prose blockquote { border-left-color: #374151; color: #9ca3af; }
+.prose pre { background: #0b1021; color: #e5e7eb; padding: 0.75rem; border-radius: 0.75rem; overflow: auto; margin: 1rem 0; }
+.dark .prose pre { background: #111827; color: #e5e7eb; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.prose th, .prose td { border: 1px solid #e5e7eb; padding: 0.5rem; }
+.dark .prose th, .dark .prose td { border-color: #374151; }
+ 
+.callout {
+  @apply my-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-800;
+}
+.ProseMirror {
+  min-height: 16rem;
+  outline: none;
+  white-space: pre-wrap;
+}
+.ProseMirror h1 { font-size: 2rem; line-height: 2.5rem; font-weight: 700; margin: 1rem 0; }
+.ProseMirror h2 { font-size: 1.5rem; line-height: 2rem; font-weight: 600; margin: 0.75rem 0; }
+.ProseMirror h3 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; margin: 0.5rem 0; }
+.ProseMirror blockquote { border-left: 4px solid #e5e7eb; padding-left: 1rem; color: #6b7280; margin: 1rem 0; }
+.dark .ProseMirror blockquote { border-left-color: #374151; color: #9ca3af; }
+.ProseMirror pre { background: #0b1021; color: #e5e7eb; padding: 0.75rem; border-radius: 0.75rem; overflow: auto; margin: 1rem 0; }
+.dark .ProseMirror pre { background: #111827; color: #e5e7eb; }
+.ProseMirror table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.ProseMirror th, .ProseMirror td { border: 1px solid #e5e7eb; padding: 0.5rem; }
+.dark .ProseMirror th, .dark .ProseMirror td { border-color: #374151; }
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+  pointer-events: none;
+  height: 0;
+}
+.editable:empty::before {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+}
